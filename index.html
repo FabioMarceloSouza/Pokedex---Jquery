@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container " >
+
+        <img src="img/logo.png" class="logo" alt="logo-pokemon">
+        <div class="row container" >
+            <div class="col-10">
+
+                <input type="search" class="form-control" name="pokedex" id="pokedex" placeholder="Digite o nome do Pokemon">
+            </div>
+            <div class="col-2 button" >
+
+                <button class="btn btn-primary" id="buscar">Buscar</button>
+            </div>
+        </div>
+
+        <div class="type container" id="type" >
+            
+            <div class="row " style="background-color: blanchedalmond;">
+                <div class="col-10 poke-info" style="background-color: blanchedalmond;">
+                    <i class="fas fa-arrow-circle-left left " id="left"></i>
+                    <img src="" id="pokemon-modal" class="pokemon-i"  alt="pokemon">
+                    
+                </div>
+                <div class="col-2" style="background-color: blanchedalmond;">
+                     <img src="img/pokebola.png" class="close" alt="">
+                     <i class="fas fa-arrow-circle-right right" id="right"></i>
+                </div>
+            </div>
+            <div class="row info"  style="background-color: blanchedalmond;" >
+               <div class="col-4 card-1 ">
+                   <h5 class="tipo">Type:</h5>
+                   <p id="tipo"></p>
+               </div>
+               <div class="col-4 card-2">
+                  <h5 class="life">Life:</h5>
+                  <p id="life"></p>
+               </div>
+               <div class="col-4 card-3">
+                  <h5 class="attack">Attack:</h5>
+                  <p id="attack"></p>
+               </div>
+            </div>
+
+        </div>
+        <div class="card container" id="card" style="display: none;">
+              <div class="poke-title">
+                  <p id="name-pokemon" style="text-align: center;"></p>
+              </div>
+              <div style="text-align: center;" class="poke-content">
+                  <img class="pokemon" alt="" id="pokemon">
+              </div>
+        </div>
+
+        <div class="information container " id="information">
+            <img src="img/pokebola.png" class="pokebola" alt="Pokebola">
+        </div>
+
+
+    </div>
+
+   
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="pokedex.js"></script>
+</body>
+</html>

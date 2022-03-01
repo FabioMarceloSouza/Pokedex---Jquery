@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ff3333;
+
+}
+
+
+#pokedex {
+    margin-bottom: 10px;
+}
+
+.logo, .pokebola {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.pokebola {
+    height: 265px;
+    cursor: pointer;  
+   
+}
+
+.pokebola:hover {
+    height: 270px;
+    box-shadow: 2px 2px 3px 3px black;
+    border-radius: 50%;
+}
+
+#buscar {
+    background-color: #330000 ;
+    opacity: 0.8;
+    border: #330000;
+    font-weight: bold;
+}
+
+#buscar:hover {
+    background-color: #660000;
+}
+
+.card {
+
+    margin-top: 5%;
+    background-color: #ff6666;
+    width: 70%;
+    max-height: 250px;
+    box-shadow: 1px 1px 2px 2px  black;
+
+}
+.poke-title, .poke-content, .pokemon, #name-pokemon {
+    background-color: #ff6666;
+}
+
+.poke-title {
+    padding-top: 5%;
+}
+
+#name-pokemon {
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+
+.pokemon {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+.information {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2%;
+ 
+}
+
+.type {
+    width: 95%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 3px black;
+    min-height: 350px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 7px;
+
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 3px;
+    background-color: blanchedalmond;
+}
+
+.close:hover {
+     width: 23px;
+     height: 23px;
+     box-shadow: 1px 1px 2px 2px black;
+     border-radius: 30px;
+}
+
+.pokemon-i {
+    background-color: blanchedalmond;
+    width: 300px;
+    padding-left: 50px;
+}
+
+.poke-info {
+    display: flex;
+    justify-content: center;
+}
+
+.card-1, .card-2, .card-3 {
+    width: 33% ;
+    border: 1px solid black;
+    border-radius: 5px ;
+    margin-left: 1px;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+h5 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.card-1 , #tipo, .tipo {
+    background-color: #e066ff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+.card-2, #life, .life {
+    background-color: #ff3333;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+.card-3, #attack, .attack {
+    background-color: #3333ff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.right {
+    background-color: blanchedalmond;
+     font-size: 30px;
+     margin-top: 160%;
+     color: #ff3333;
+     cursor: pointer;
+}
+.left {
+    background-color: blanchedalmond;
+     font-size: 30px;
+     margin-top: 30%;
+     color: #ff3333;
+     cursor: pointer;
+}
+
+
